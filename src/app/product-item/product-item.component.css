@@ -44,7 +44,7 @@
 button {
     padding: .5em 1.5em;
     width: auto;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     font-size: 1em;
