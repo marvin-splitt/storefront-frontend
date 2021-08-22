@@ -1,0 +1,35 @@
+.header {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li:first-child {
+    margin-right: 1em;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .5em 1.5em;
+    border-radius: 1.5em;
+    position: relative;
+}
+
+.activeLink::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: .4em;
+    background-color: white;
+    height: 2px;
+    border-radius: 2px;
+    width: 60%;
+}

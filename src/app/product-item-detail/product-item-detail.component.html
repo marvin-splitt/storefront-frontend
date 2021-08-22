@@ -1,0 +1,11 @@
+<div *ngIf="product">
+    <img src="{{product.url}}">
+    <div>
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+        <input type="number">
+        <button>Add to cart</button>
+        <button (click)="goBack()">Go back</button>
+    </div>
+</div>
+

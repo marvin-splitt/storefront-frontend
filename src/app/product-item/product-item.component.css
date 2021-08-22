@@ -1,0 +1,53 @@
+.productCard {
+    width: 15em;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCard img {
+    width: 100%;
+    height: auto;
+}
+
+.divider {
+    width: 90%;
+    margin: .5em auto;
+    height: 1px;
+    background-color: black;
+}
+
+.productTitle {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productBody {
+    width: 60%;
+    margin: .5em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productBody input {
+    width: 3.5em;
+    text-align: center;
+}
+
+button {
+    padding: .5em 1.5em;
+    width: auto;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin: .5em auto;
+}

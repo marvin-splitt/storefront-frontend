@@ -1,0 +1,15 @@
+<h3>Your Cart</h3>
+<div class="cart">
+    <div class="products">
+        <ul>
+            <li *ngFor="let product of cartProducts">
+                <app-cart-product [product]="product" (deleteProduct)="deleteProduct($event)"></app-cart-product>
+            </li>
+            <p>Total: {{totalPrice}} $</p>
+        </ul>
+    </div>
+    <div class="checkout">
+        <app-checkout-form></app-checkout-form>
+    </div>
+    
+</div>

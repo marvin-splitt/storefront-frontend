@@ -1,0 +1,15 @@
+.checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+}

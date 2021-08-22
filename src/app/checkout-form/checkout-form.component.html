@@ -1,0 +1,18 @@
+<h3>Checkout</h3>
+<form (ngSubmit)="onCheckout()" class="checkout">
+    <label>First Name</label>
+    <input type="text" name="firstName" [(ngModel)]="firstName">
+    <label>Last Name</label>
+    <input type="text" name="lastName" [(ngModel)]="lastName">
+    <label>Street</label>
+    <input type="text" name="street" [(ngModel)]="street">
+    <label>Street Number</label>
+    <input type="text" name="streetNumber" [(ngModel)]="streetNumber">
+    <label>Postal Code</label>
+    <input type="text" name="postalCode" [(ngModel)]="postalCode">
+    <label>City</label>
+    <input type="text" name="city" [(ngModel)]="city">
+    <label>Credit Card Number</label>
+    <input type="text" name="creditCard" [(ngModel)]="creditCard">
+    <button type="submit">Buy Now</button>
+</form>
