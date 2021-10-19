@@ -2,7 +2,7 @@
   <img src="{{ product.url }}" />
   <div class="productDetail">
     <app-amount-selector
-      [amount]="productAmount"
+      [(amount)]="productAmount"
       (amountChange)="updateAmount($event)"
     ></app-amount-selector>
     <app-button

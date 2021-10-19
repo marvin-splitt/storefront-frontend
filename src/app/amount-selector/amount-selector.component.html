@@ -4,7 +4,8 @@
     #amountSelector
     id="amount"
     type="number"
-    (change)="onChange(amountSelector.value)"
+    [(ngModel)]="amount"
+    (ngModelChange)="onChange($event)"
   >
     <option
       *ngFor="let item of [].constructor(15); let number = index"

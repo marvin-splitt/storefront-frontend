@@ -30,7 +30,6 @@ export class CartProductComponent implements OnInit {
 
   updateAmount = (amount: number) => {
     this.cartService.updateAmount(this.product.id, amount);
-    this.productAmount = amount;
     this.updateTotal.emit()
   }
 

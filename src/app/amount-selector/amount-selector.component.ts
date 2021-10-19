@@ -17,7 +17,6 @@ export class AmountSelectorComponent implements OnInit {
 
   onChange = (val: string) => {
     const newAmount = parseInt(val, 10)
-    this.amount = newAmount;
     this.amountChange.emit(newAmount);
     console.log(newAmount)
   }

@@ -3,6 +3,7 @@
   <div class="productInfo">
     <h3 class="productHeader">{{ product.name }}</h3>
     <p class="productDescription">{{ product.description }}</p>
+    <p>Price: {{ product.price }}$</p>
     <app-amount-selector
       class="productAmount"
       [(amount)]="productAmount"
