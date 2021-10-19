@@ -2,7 +2,7 @@
 
 This project is part of the Udacity Full-Stack Javascript Nanodegree
 
-It is an E-Commerce plattform for buying cool stuff, build with Angular. It is currently only with mocked data and orders. In the future I will try to connect it with my backend so it is a fully functionable platform. Also I will improve styling and user interaction. This is just a small MVP with minimal funtionality and styling.
+It is an E-Commerce plattform for buying cool stuff, build with Angular. It is currently only with mocked data and orders. In the future I will try to connect it with my backend so it is a fully functional platform. Also I will improve styling and user interaction. Currently this is just a small MVP with minimal funtionality and styling to pass the project requirements.
 
 ## Get started
 
