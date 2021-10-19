@@ -1,0 +1,17 @@
+<div class="amountSelector">
+  <label for="amount">Amount:</label>
+  <select
+    #amountSelector
+    id="amount"
+    type="number"
+    (change)="onChange(amountSelector.value)"
+  >
+    <option
+      *ngFor="let item of [].constructor(15); let number = index"
+      value="{{ number + 1 }}"
+      selected="{{ number + 1 === amount ? true : null }}"
+    >
+      {{ number + 1 }}
+    </option>
+  </select>
+</div>

@@ -1,17 +1,19 @@
 <div class="productCard">
-        <a routerLink="/product/{{product.id}}">
-            <img mat-card-image src='{{product.url}}'/>
-        </a>
-        <div class="productTitle">
-            <h4>{{product.name}}</h4>
-            <p>{{product.price}}€</p>
-        </div>
-        <div class="divider"></div>
-        <div class="productBody">
-            <label for="amount">Amount:</label>
-            <select #amountSelector id="amount" type="number" (change)="updateAmount(amountSelector.value)">
-                <option *ngFor="let item of [].constructor(15) let number = index" value="{{number + 1}}">{{number + 1}}</option>
-            </select>
-        </div>
-        <button (click)="addToCart()">Add to cart</button>
-    </div>
+  <a routerLink="/product/{{ product.id }}">
+    <img src="{{ product.url }}" />
+  </a>
+  <div class="productTitle">
+    <h4>{{ product.name }}</h4>
+    <p>{{ product.price }}€</p>
+  </div>
+  <div class="divider"></div>
+  <app-amount-selector
+    class="selector"
+    [(amount)]="productAmount"
+  ></app-amount-selector>
+  <app-button
+    class="submit"
+    (click)="addToCart()"
+    buttonText="Add to cart"
+  ></app-button>
+</div>

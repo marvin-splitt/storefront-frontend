@@ -3,6 +3,7 @@
 :root {
     --primary-color: #0b3082;
     --secondary-color: #2196f3;
+    --black: #1C1C1C
 }
 
 
@@ -16,6 +17,7 @@ body {
     height: 100vh;
     font-family: 'Nunito', "Helvetica Neue", sans-serif;
     box-sizing: border-box;
+    color: var(--black);
 }
 
 p {
@@ -29,7 +31,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--black);
     cursor: pointer;
 }
 

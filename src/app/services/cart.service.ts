@@ -16,10 +16,12 @@ export class CartService {
     const existingProductIndex = this.cart.findIndex(cProd => cProd.id === product.id);
 
     if (existingProductIndex !== -1) {
+      const updatedAmount = this.cart[existingProductIndex].amount + amount
       this.cart[existingProductIndex] = {
         ...product,
-        amount: this.cart[existingProductIndex].amount + amount
+        amount: updatedAmount
       }
+      alert(`Updated amount of product: ${product.name} - new amount: ${updatedAmount}`)
       return;
     }
 
@@ -29,6 +31,7 @@ export class CartService {
     })
 
     sessionStorage.setItem('storefront-cart', JSON.stringify(this.cart));
+    alert(`Added product to cart: ${product.name} - amount: ${amount}`)
   }
 
   removeFromCart = (id: number): void => {

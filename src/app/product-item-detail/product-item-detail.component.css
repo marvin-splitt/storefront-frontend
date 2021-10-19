@@ -1,0 +1,44 @@
+.productDetail {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  padding: 1em 4em;
+  margin: 0 auto;
+}
+
+.productHeader {
+  margin-bottom: .25em;
+  font-size: 2.5em;
+}
+
+.productDescription {
+  margin-bottom: 2em;
+  font-size: 1.3em;
+}
+
+.productAmount {
+  margin-bottom: 1em;
+  width: 8em;
+}
+
+.buttonGroup {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 10em);
+  grid-column-gap: 1em;
+}
+
+img {
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+}

@@ -1,1 +1,4 @@
-<p>confirmation works!</p>
+<div *ngIf="order">
+  <h2>Thank you for your order, {{ order.customer.name }}!</h2>
+  <p>Your order #{{ order.id }} is on the way to you :)</p>
+</div>

@@ -7,12 +7,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductItemDetailComponent } from './product-item-detail/product-item-detail.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'dashboard'},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'confirmation', component: ConfirmationComponent},
-  {path: 'cart', component: CartComponent},
-  {path: 'product/:id', component: ProductItemDetailComponent},
-  {path: '**', component: PageNotFoundComponent}
+  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'confirmation/:id', component: ConfirmationComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'product/:id', component: ProductItemDetailComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

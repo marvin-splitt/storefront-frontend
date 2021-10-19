@@ -10,7 +10,7 @@ import { CartService } from '../services/cart.service';
 export class ProductItemComponent implements OnInit {
 
   @Input() product!: Product;
-  amount: number = 1;
+  productAmount: number = 1;
 
   constructor(private cart: CartService) { }
 
@@ -18,11 +18,6 @@ export class ProductItemComponent implements OnInit {
   }
 
   addToCart = () => {
-    this.cart.addToCart(this.product, this.amount);
-  }
-  
-  updateAmount = (value: string) => {
-    this.amount = parseInt(value, 10);
-    console.log(this.amount)
+    this.cart.addToCart(this.product, this.productAmount);
   }
 }

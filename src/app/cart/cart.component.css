@@ -1,5 +1,27 @@
 .cart {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.total {
+  margin: 1em 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.products li:not(:last-child) {
+  margin-bottom: .5em;
+}
+
+.checkout {
+  width: 90%;
+  max-width: 25em;
 }

@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-item/product-item.component';
@@ -19,12 +18,13 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { CartProductComponent } from './cart-product/cart-product.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { ButtonComponent } from './button/button.component';
+import { AmountSelectorComponent } from './amount-selector/amount-selector.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    SearchBarComponent,
     HeaderComponent,
     ProductListComponent,
     ProductItemComponent,
@@ -33,7 +33,9 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     ConfirmationComponent,
     PageNotFoundComponent,
     CheckoutFormComponent,
-    CartProductComponent
+    CartProductComponent,
+    ButtonComponent,
+    AmountSelectorComponent,
   ],
   imports: [
     BrowserModule,
